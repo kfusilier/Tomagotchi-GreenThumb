@@ -21,63 +21,57 @@
     </head>
 
     <body>
-        <main><!-- Game Play Page -->
-            
-            <div>
-                <h1>GreenThumb<br>Simulator</h1>
-                <p>Instructions:</p>
-                <p> 1. Water your plant when it's thirsty.<br>
-                    2. Talk to your plant when it's lonely.<br>
-                    3. Walk the dog to keep it from bothering the plant.</p>
-            </div>
+        <main>
+            <!-- Game Play Page -->     
+            <div class="content-container">
+                    <div>
+                        <h1>GreenThumb<br>Simulator</h1>
+                        <p>Instructions:</p>
+                        <p> 1. Water your plant when it's thirsty.<br>
+                            2. Talk to your plant when it's lonely.<br>
+                            3. Walk the dog to keep it from bothering the plant.</p>
+                    </div>
            
-            <!-- 3 Status Bars -->
+                    <!-- 3 Status Bars -->
+                    <div class="value-wrap">
 
-            <div class="value-wrap">
-
-                    <!-- Thirst Status Bars -->
-
-                    <div class="value-container">
-                        <div class="value-bar-bg">
-                            <div class="value-bar" id="thirst-bar"></div>
+                        <!-- Thirst Status Bars -->
+                        <div class="value-container">
+                            <div class="value-bar-bg">
+                                <div class="value-bar" id="thirst-bar"></div>
+                            </div>
+                            <p>THIRST</p>
                         </div>
-                        <p>THIRST</p>
+
+                        <!-- Loneliness Status Bars -->
+                        <div class="value-container">
+                            <div class="value-bar-bg">
+                                <div class="value-bar" id="loneliness-bar"></div>
+                            </div>
+                            <p>LONELINESS</p>
+                        </div>
+
+                        <!-- Dog Attack Status Bars -->
+                        <div class="value-container">
+                            <div class="value-bar-bg">
+                                <div class="value-bar" id="dog-attack-bar"></div>
+                            </div>
+                            <p>DOG ATTACK</p>
+                        </div>
                     </div>
 
-                    <!-- Loneliness Status Bars -->
-
-                    <div class="value-container">
-                        <div class="value-bar-bg">
-                            <div class="value-bar" id="loneliness-bar"></div>
+                        <!-- Reset Buttons -->
+                        <div class="button-wrap">
+                            <button class="reset-btn" id="thirst">Water the Plant</button>
+                            <button class="reset-btn" id="loneliness">Talk to Plant</button>
+                            <button class="reset-btn" id="dog">Walk the Dog</button> 
                         </div>
-                        <p>LONELINESS</p>
-                    </div>
-
-                    <!-- Dog Attack Status Bars -->
-
-                    <div class="value-container">
-                        <div class="value-bar-bg">
-                            <div class="value-bar" id="dog-attack-bar"></div>
-                        </div>
-                        <p>DOG ATTACK</p>
-                    </div>
-
-            </div>    
-
-                        
-                        
-                        
-                        
+            </div>
 
 
 
-
-
-
-                <!-- Reset Buttons -->
-                <button class="reset-btn" id="thirst">Water the Plant</button>
-                <button class="reset-btn" id="loneliness">Talk to Plant</button>
-                <button class="reset-btn" id="dog">Walk the Dog</button> 
+            
+                
             
 
                  
