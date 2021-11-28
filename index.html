@@ -6,23 +6,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <!-- Browser Tab Title -->
+        <!-- BROWSER TAB -->
         <title>GreenThumb</title>
 
-        <!--CSS link -->
+        <!-- CSS LINK -->
         <link rel="stylesheet" href="styles.css">  
 
-        <!--Favicon Link -->
+        <!-- FAVICON LINK -->
         <link rel="icon" href="images/favicon.ico"> 
 
-        <!-- J Query Link -->
+        <!-- J QUERY LINK -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <main>
-            <!-- Game Play Page -->     
+            <!-- GAME PLAY PAGE -->     
             <div class="content-container">
                     <div>
                         <h1>GreenThumb<br>Simulator</h1>
@@ -32,10 +32,10 @@
                             3. Walk the dog to keep it from bothering the plant.</p>
                     </div>
            
-                    <!-- 3 Status Bars -->
+                    <!-- STATUS BARS - 3 -->
                     <div class="value-wrap">
 
-                        <!-- Thirst Status Bars -->
+                        <!-- THIRST BAR -->
                         <div class="value-container">
                             <div class="value-bar_bg">
                                 <div class="value-bar" id="thirst-bar"></div>
@@ -43,7 +43,7 @@
                             <p>THIRST</p>
                         </div>
 
-                        <!-- Loneliness Status Bars -->
+                        <!-- LONELINESS BAR -->
                         <div class="value-container">
                             <div class="value-bar_bg">
                                 <div class="value-bar" id="loneliness-bar"></div>
@@ -51,7 +51,7 @@
                             <p>LONELINESS</p>
                         </div>
 
-                        <!-- Dog Attack Status Bars -->
+                        <!-- DOG ATTACK BAR -->
                         <div class="value-container">
                             <div class="value-bar_bg">
                                 <div class="value-bar" id="dog-attack-bar"></div>
@@ -60,14 +60,14 @@
                         </div>
                     </div>
 
-                        <!-- Reset Buttons -->
+                        <!-- STATUS RESET BUTTONS -->
                         <div class="button-wrap">
                             <button class="reset-btn" id="thirst">Water the Plant</button>
                             <button class="reset-btn" id="loneliness">Talk to Plant</button>
                             <button class="reset-btn" id="dog">Walk the Dog</button> 
                         </div>
             </div>
-                    <!-- Username/Graphics Container -->
+                    <!-- USERNAME/GRAPHIC CONTAINER -->
                     <div class="graphics-container">
                         <div class="graphic-wrap">
                             <h3 class="username">Username</h3>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
 
-                    <!-- Completion Status Bar -->
+                    <!-- COMPLETION BAR -->
                     <div class="remaining-work-container">
                         <div class="rw-bar_bg">
                             <p class="rw-text">Completed Work—<span class="rw-percent">0%</span></p>
@@ -84,13 +84,12 @@
                     </div>
         </main>
 
-
-            <!-- Start Screen -->
+            <!-- START SCREEN -->
             <div class="start-popup">
                 <h1>GreenThumb<br>Simulator</h1>
                     <p>Your task is to protect your plant from  <strong>THIRST</strong>, <strong>LONELINESS</strong>, and <strong>DOG ATTACK</strong>!<br>Keep your plant alive for 7 days to win the game!</p>
 
-                <!-- Plant Name Input -->
+                <!-- PLANT NAME INPUT -->
                 <form class="start-form">
                     <div class="get-username"><span>Name your plant&nbsp;</span>
                         <input class="username-field"type="text"placeholder="ex: Keanu Leaves"><span>.</span>
@@ -99,25 +98,25 @@
                 </form>
             </div>
 
-                <!-- LOSS Screen -->
+                <!-- LOSE SCREEN -->
                 <div class="lose-popup">
                     <h1>☠️<br>You LOSE!<br>Your plant is Dead!</h1>
                         <p>Lucky for you, pretend plants are easy to come by 🌱</p>
                             <p class="tiny-text" style="margin-top: 12px;">Give it another try?</p>
                     
-                    <!-- LOSS Restart Button -->        
+                    <!-- LOSE RESTART BUTTON -->        
                     <form class="start-form">
                         <button class="restart-btn">Try again</button>
                     </form>
                 </div>
 
-                <!-- WIN Screen -->
+                <!-- WIN SCREEN -->
                 <div class='win-popup'>
                     <h1>🪴<br>You WIN!<br>Your plant is alive!</h1>
                         <p>You're clearly a gardening wizard 🍃</p>
                             <p class="tiny-text" style="margin-top: 12px;">Give it another try?</p>
         
-                    <!-- WIN Restart Button -->
+                    <!-- WIN RESTART BUTTON -->
                     <form class="start-form">
                         <button class="restart-btn">Play again</button>
                     </form>                
