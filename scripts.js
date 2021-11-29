@@ -63,11 +63,7 @@ function play() {
 
 	//change image
 	graphicIntervalId = setInterval(function () {   
-        /*
-        if age is between 0-4 show young plant
-        else if age is between 5-8 show adolescent plant
-        else show adult plant
-        */
+        
         if (user.remWork < 5 )  {
             $('.graphic').css('background-image', 'url("images/seedling.png")')
         }   else if (user.remWork >= 5 && user.remWork < 9) {
@@ -75,12 +71,20 @@ function play() {
         }   else {
             $('.graphic').css('background-image', 'url("images/grown.png")')
         }   
+        if (user.dog < 30)   {
+            $('.graphic').text("Save me from the dog, take it for a walk!")
+        }   else if (user.thirst > 70)  {
+            $('.graphic').text("I'm so thirsty, water me!")   
+        }   else if (user.loneliness > 70)  {
+            $('.graphic').text("I'm lonely, talk to me!")
+        }   else {
+            $('.graphic').text("")
+        }
         $dogBar.css("background-color", user.dog < 30 ? "red" : "var(--main-color)")
-        $dogBar.css(
-					'background-color',
-					user.dog < 30 ? 'red' : 'var(--main-color)')
-
-	}, 1000)
+        $thirstBar.css("background-color",user.thirst > 70 ? 'red' : "var(--main-color)")
+        $lonelinessBar.css("background-color",user.loneliness > 70 ? 'red' : "var(--main-color)")
+    }, 
+    1000)
 	if (user.thirst >= 100 || user.loneliness >= 100 || user.dog <= 0) {
 		gameOver()
 	}
