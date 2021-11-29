@@ -25,7 +25,7 @@
             <!-- GAME PLAY PAGE -->     
             <div class="content-container">
                     <div>
-                        <h1>GreenThumb<br>Simulator</h1>
+                        <h2>GreenThumb<br>Simulator</h2>
                         <p>Instructions:</p>
                         <p> 1. Water your plant when it's thirsty.<br>
                             2. Talk to your plant when it's lonely.<br>
@@ -54,9 +54,9 @@
                         <!-- DOG ATTACK BAR -->
                         <div class="value-container">
                             <div class="value-bar_bg">
-                                <div class="value-bar" id="dog-attack-bar"></div>
+                                <div class="value-bar" id="dog-bar"></div>
                             </div>
-                            <p>DOG ATTACK</p>
+                            <p>COUNT DOWN TO DOG ATTACK</p>
                         </div>
                     </div>
 
@@ -78,7 +78,8 @@
                     <!-- COMPLETION BAR -->
                     <div class="remaining-work-container">
                         <div class="rw-bar_bg">
-                            <p class="rw-text">Completed Work—<span class="rw-percent">0%</span></p>
+                            <p class="rw-text">
+                                <span class="rw-percent">Yay New Plant!</span></p>
                             <div class="rw-bar"></div>
                         </div>
                     </div>
@@ -92,15 +93,17 @@
                 <!-- PLANT NAME INPUT -->
                 <form class="start-form">
                     <div class="get-username"><span>Name your plant&nbsp;</span>
-                        <input class="username-field"type="text"placeholder="ex: Keanu Leaves"><span>.</span>
+                        <input class="username-field" type="text" placeholder="ex: Keanu Leaves"/><span>.</span>
                     </div>
-                        <input class="start-btn" type="submit" value="Play the game">
+
+                        <!-- Play the game button -->
+                        <input class="start-btn" type="submit" value="Play the game"/>
                 </form>
             </div>
 
                 <!-- LOSE SCREEN -->
                 <div class="lose-popup">
-                    <h1>☠️<br>You LOSE!<br>Your plant is Dead!</h1>
+                    <h1>☠️<br>You LOSE!<br><span class="plantName"></span> is Dead!</h1>
                         <p>Lucky for you, pretend plants are easy to come by 🌱</p>
                             <p class="tiny-text" style="margin-top: 12px;">Give it another try?</p>
                     
@@ -112,7 +115,7 @@
 
                 <!-- WIN SCREEN -->
                 <div class='win-popup'>
-                    <h1>🪴<br>You WIN!<br>Your plant is alive!</h1>
+                    <h1>🪴<br>You WIN!<br><span class="plantName"></span> is alive!</h1>
                         <p>You're clearly a gardening wizard 🍃</p>
                             <p class="tiny-text" style="margin-top: 12px;">Give it another try?</p>
         
@@ -123,6 +126,6 @@
                 </div>
 
             <!-- JS Link -->
-            <script src="js/script.js" async defer></script>
+            <script src="scripts.js" async defer></script>
     </body>
 </html>
