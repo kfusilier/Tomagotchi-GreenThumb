@@ -4,8 +4,8 @@
 }
 
 :root {
-    --bg: #80ced6;
-    --main-color: #667292;
+    --bg: #628e2f;
+    --main-color: #ffffff;
 }
 
 body {
@@ -151,7 +151,7 @@ form input {
 
 .tiny-text {
     font-size: 12px;
-    color: rgb(100, 100, 100);
+    color: #ffffff;
 }
 
 .get-username{
@@ -169,7 +169,7 @@ form input {
 }
 
 ::placeholder {
-    color: #d5f4e6;
+    color: #8bc34a;
 }
 
 .start-btn {
