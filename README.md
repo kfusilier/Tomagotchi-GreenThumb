@@ -1,25 +1,4 @@
-Rough Steps
-
-AAU = As A User
-
-AAU select start game
-AAU select plant pet type
-    types of plants: 
-        succulent: lower maintenance (easy level)
-        fruiting: higher maintenance (less easy level)
-
-AAU name selected pet
-    input for name
-
-Named pet becomes screen focus displaying name and age starting at 0 days.
-
-Duties for user:
-                Water pet: high frequency depletion/equal output watering action
-                Talk to pet: medium frequency depletion/high output talking action
-                Deter dog attack: medium build threat/high output for deterrence action
-
-```
-# ApplicationName
+# Green🌿Thumb
 
 ## Concept:
 Explain the concept of the application or game. Include instructions and how to win/lose.
