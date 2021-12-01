@@ -1,6 +1,4 @@
-
-// global variables
-
+// GLOBAL VARIABLES
 let workLeft = 100
 let user = {
 	name: '',
@@ -10,31 +8,25 @@ let user = {
 	remWork: 0,
 }
 
-// buttons
-// const dog = $('#dog')
-// const water = $('#thirst')
-// const loneliness = $('#loneliness')
+// BUTTONS
 const resetValueBtn = $('.reset-btn')
 const startForm = $('.start-form')
 const restartGame = $('.restart-btn')
 
-//value bars
-
+//VALUE BARS
 const $thirstBar = $('#thirst-bar')
 const $dogBar = $('#dog-bar')
 const $lonelinessBar = $('#loneliness-bar')
 const $remBar = $('.rw-bar')
 
-// user levels function
-
+// USER LEVEL FUNCTIONS
 let thirstIntervalId = ''
 let dogIntervalId = ''
 let lonelinessIntervalId = ''
 let remIntervalId = ''
 let graphicIntervalId = ''
 
-// game start
-
+// GAME START
 function gameStart(e) {
 	e.preventDefault()
 	popupsBeGone()
@@ -44,16 +36,14 @@ function gameStart(e) {
 	play()
 }
 
-// hide all popups
-
+// HIDE POP UPS
 function popupsBeGone() {
 	$('.lose-popup').css('display', 'none')
 	$('.win-popup').css('display', 'none')
 	$('.start-popup').css('display', 'none')
 }
 
-// play game
-
+// PLAY GAME
 function play() {
 	$('.graphic').css('background-image', 'url("images/seedling.png")')   
 	remWorkLvl($remBar, 3000)
@@ -61,7 +51,7 @@ function play() {
 	dogLvl($dogBar, 300)
 	lonelinessLvl($lonelinessBar, 200)
 
-	//change image
+// IMAGE CHANGE
 	graphicIntervalId = setInterval(function () {   
         
         if (user.remWork < 5 )  {
@@ -90,11 +80,7 @@ function play() {
 	}
 }
 
-
-
-
-// reset values on game end
-
+// RESET VALUES - GAME END
 function resetAllValues() {
 	for (const stats in user) {
 		if (stats == 'name') {
@@ -113,21 +99,19 @@ function resetAllValues() {
 	}
 }
 
-// win game
-
+// WIN GAME
 function winGame() {
 	$('.win-popup').css('display', 'flex')
 	resetAllValues()
 }
 
-// lose game
+// LOSE GAME
 function gameOver() {
 	$('.lose-popup').css('display', 'flex')
 	resetAllValues()
 }
 
-// Start Value Bars
-
+// START VALUE BARS
 function thirstLvl(bar, speed) {
 	thirstIntervalId = setInterval(function () {
 		user.thirst++
@@ -173,8 +157,7 @@ function remWorkLvl(bar, speed) {
 	}, speed)
 }
 
-// stop value bar
-
+// STOP VALUE BAR
 function clearAllIntervals() {
 	clearInterval(thirstIntervalId)
 	clearInterval(lonelinessIntervalId)
@@ -183,8 +166,7 @@ function clearAllIntervals() {
 	clearInterval(graphicIntervalId)
 }
 
-// Reset Values on btn click
-
+// RESET VALUES BUTTON CLICK
 function resetValue(e) {
 	e.preventDefault()
 	if (this.id == 'thirst') {
@@ -205,8 +187,7 @@ function resetValue(e) {
 	}
 }
 
-// interaction events
-
+// INTERACTION EVENTS
 startForm.on('submit', gameStart)
 resetValueBtn.on('click', resetValue)
 restartGame.on('click', gameStart)
