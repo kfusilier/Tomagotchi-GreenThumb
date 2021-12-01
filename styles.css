@@ -4,8 +4,17 @@
 }
 
 :root {
-    --bg: #628e2f;
+    --bg: #832161;
     --main-color: #ffffff;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+.tiny-text {
+    font-size: 14px;
+    color: #ffffff;
 }
 
 body {
@@ -13,7 +22,6 @@ body {
     background-color: var(--bg);
     color: var(--main-color);
 }
-
 
 main {
     display: flex;
@@ -38,14 +46,18 @@ main {
     position: absolute;
     color: var(--main-color);
     text-shadow:
-   -1px -1px 0 var(--bg),  
+    -1px -1px 0 var(--bg),  
     1px -1px 0 var(--bg),
     -1px 1px 0 var(--bg),
-     1px 1px 0 var(--bg);
+    1px 1px 0 var(--bg);
     text-align: center;
     width: 100%;
     font-size: large;
     font-weight: bold;
+}
+
+.rw-percent {
+    color: #F59A66
 }
 
 .rw-bar {
@@ -68,6 +80,10 @@ main {
     align-items: center;
 }
 
+.intro {
+    font-size:large
+}
+
 h1 {
     font-size: 90px;
     line-height: 1;
@@ -85,7 +101,6 @@ h6 {
     font-size: 20px;
     margin-bottom: 8px;
 }
-
 
 /* Intro Screen */
 
@@ -150,11 +165,6 @@ form input {
     outline: none;
 }
 
-.tiny-text {
-    font-size: 12px;
-    color: #ffffff;
-}
-
 .get-username{
     font-size: 32px;
     text-align: center;
@@ -167,10 +177,6 @@ form input {
     text-align: center;
     background-color: var(--bg);
     color: var(--main-color);
-}
-
-::placeholder {
-    color: #8bc34a;
 }
 
 .start-btn {

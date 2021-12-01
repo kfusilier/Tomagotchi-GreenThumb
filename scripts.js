@@ -80,9 +80,9 @@ function play() {
         }   else {
             $('.graphic').text("")
         }
-        $dogBar.css("background-color", user.dog < 30 ? "red" : "var(--main-color)")
-        $thirstBar.css("background-color",user.thirst > 70 ? 'red' : "var(--main-color)")
-        $lonelinessBar.css("background-color",user.loneliness > 70 ? 'red' : "var(--main-color)")
+        $dogBar.css("background-color", user.dog < 30 ? "#F59A66" : "var(--main-color)")
+        $thirstBar.css("background-color",user.thirst > 70 ? '#F59A66' : "var(--main-color)")
+        $lonelinessBar.css("background-color",user.loneliness > 70 ? '#F59A66' : "var(--main-color)")
     }, 
     1000)
 	if (user.thirst >= 100 || user.loneliness >= 100 || user.dog <= 0) {

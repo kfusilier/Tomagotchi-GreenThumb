@@ -18,20 +18,20 @@
         <!-- J QUERY LINK -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    </head>
 
+</head>
     <body>
         <main>
             <!-- GAME PLAY PAGE -->     
             <div class="content-container">
                     <div>
                         <h2>GreenThumb<br>Simulator</h2>
-                        <p>Instructions:</p>
+                        <p><strong>Instructions:</strong></p>
                         <p> 1. Water your plant when it's thirsty.<br>
                             2. Talk to your plant when it's lonely.<br>
-                            3. Walk the dog to keep it from bothering the plant.</p>
+                            3. Walk the dog so it won't bother your plant.</p>
                     </div>
-           
+
                     <!-- STATUS BARS - 3 -->
                     <div class="value-wrap">
 
@@ -56,15 +56,15 @@
                             <div class="value-bar_bg">
                                 <div class="value-bar" id="dog-bar"></div>
                             </div>
-                            <p>COUNT DOWN TO DOG ATTACK</p>
+                            <p>IMPENDING DOG ATTACK</p>
                         </div>
                     </div>
 
                         <!-- STATUS RESET BUTTONS -->
                         <div class="button-wrap">
-                            <button class="reset-btn" id="thirst">Water the Plant</button>
-                            <button class="reset-btn" id="loneliness">Talk to Plant</button>
-                            <button class="reset-btn" id="dog">Walk the Dog</button> 
+                            <button class="reset-btn" id="thirst">WATER PLANT</button>
+                            <button class="reset-btn" id="loneliness">TALK TO PLANT</button>
+                            <button class="reset-btn" id="dog">WALK DOG</button> 
                         </div>
             </div>
                     <!-- USERNAME/GRAPHIC CONTAINER -->
@@ -87,8 +87,8 @@
 
             <!-- START SCREEN -->
             <div class="start-popup">
-                <h1>GreenThumb<br>Simulator</h1>
-                    <p>Your task is to protect your plant from  <strong>THIRST</strong>, <strong>LONELINESS</strong>, and <strong>IMPENDING DOG ATTACK</strong>!<br>Keep your plant alive for 10 days to win the game!</p>
+                <h1>Green🌿Thumb<br>Simulator<br></h1>
+                    <p class="intro"><strong>THIRST</strong>, <strong>LONELINESS</strong>, and <strong>IMPENDING DOG ATTACK</strong>!<br>Keep your plant alive for <strong>10 DAYS</strong> to win the game.</p>
 
                 <!-- PLANT NAME INPUT -->
                 <form class="start-form">
@@ -97,29 +97,29 @@
                     </div>
 
                         <!-- Play the game button -->
-                        <input class="start-btn" type="submit" value="Play the game"/>
+                        <input class="start-btn" type="submit" value="PLAY THE GAME"/>
                 </form>
             </div>
 
                 <!-- LOSE SCREEN -->
                 <div class="lose-popup">
-                    <h1>☠️<br>You LOSE!<br><span class="plantName"></span> is Dead!</h1>
-                        <p>Lucky for you, pretend plants are easy to come by 🌱</p>
+                    <h1>☠️<br>You LOSE!<br><span class="plantName"></span> is Dead.</h1>
+                        <p>Luckily, pretend plants are easy to come by. </p>
                     
                     <!-- LOSE RESTART BUTTON -->        
                     <form class="start-form">
-                        <button class="restart-btn">Try again</button>
+                        <button class="restart-btn">TRY AGAIN</button>
                     </form>
                 </div>
 
                 <!-- WIN SCREEN -->
                 <div class='win-popup'>
-                    <h1>🪴<br>You WIN!<br><span class="plantName"></span> is alive!</h1>
-                        <p>You're clearly a gardening wizard 🍃</p>
+                    <h1>🪴<br>You WIN!<br><span class="plantName"></span> is alive.</h1>
+                        <p>You're clearly a gardening wizard.</p>
         
                     <!-- WIN RESTART BUTTON -->
                     <form class="start-form">
-                        <button class="restart-btn">Play again</button>
+                        <button class="restart-btn">PLAY AGAIN</button>
                     </form>                
                 </div>
 
