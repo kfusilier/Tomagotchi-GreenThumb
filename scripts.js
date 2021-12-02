@@ -51,7 +51,7 @@ function play() {
 	dogLvl($dogBar, 300)
 	lonelinessLvl($lonelinessBar, 200)
 
-// IMAGE CHANGE
+// IMAGE/TEXT CHANGE - STATUS COLOR ALERTS
 	graphicIntervalId = setInterval(function () {   
         
         if (user.remWork < 5 )  {
