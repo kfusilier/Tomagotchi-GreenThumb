@@ -36,7 +36,5 @@ All of it, in a good way. It was challenging to see how every small step in maki
 ## Additional information:
 It helped me a lot to start from something functional and work backwards, breaking each part so I could try and fix it the way I needed it to be. I did have help on the functions to check my logic and remove about 20% of each object that wasn't needed for my game use. I touched every part of the code, a lot of the existing CSS was just what I wanted so that aspect has the least changes.
 
-***Grading Bonus Challenge: I added a favicon to the browser tab that I then tried to delete but it persists despite not being linked in any way I can find. If you find it tell me where/how?
-
 ## App Demo
 https://github.com/kfusilier/Tomagotchi-GreenThumb
